@@ -1,45 +1,41 @@
 # Store-bot
 
-Это пример телеграм магазин-бота. Простой, а главное эффективный способ оформить заказ, не выходя из любимого мессенджера. 
+# This is an example of a Telegram shop-bot. It's a simple yet effective way to place an order without leaving your favorite messenger. 
 
-## Что он умеет?
+## What can it do?
 
-1. `/start` - нужно для запуска бота, а также чтобы выбрать режим (пользователь / админ). 
+# 1. `/start` - needed to start the bot, as well as to choose the mode (user / admin). 
+# 2. `/menu` - go to the menu. 
+# 3. `/sos` - ask a question to the administrator.
 
-2. `/menu` - перейти в меню. 
+## Menu
 
-3. `/sos` - задать вопрос администратору.
+# The user menu looks like this:
 
-## Меню
+# ![User Menu](data/assets/4.png)
 
-Меню пользователя выглядит следующим образом:
+## Catalog
 
-![Пользовательское меню](data/assets/4.png)
+# The catalog consists of products, sorted by categories. The user has the ability to add items to the cart, and the admin has full rights to edit the catalog (add / delete).
 
-## Каталог
+## Basket
 
-Каталог состоит из товаров, отсортированных по категориям. Пользователю доступна функция добавления в корзину, а у админа полные права на редактирование каталога (добавление / удаление).
+# The ordering process is as follows: the user goes to `🛍️ Catalog`, moves to the desired category, selects products and presses the `🛒 Basket` button. 
 
-## Корзина
+# ![Cart](data/assets/5.png)
 
-Процесс оформления выглядит следующим образом: пользователь переходит в `🛍️ Каталог`, переходит в нужную категорию, выбирает товары и нажимает кнопку `🛒 Корзина`. 
+# Then, making sure everything is in place, proceeds to checkout by pressing `📦 Checkout`.
 
-![cart](data/assets/5.png)
+# ![Checkout](data/assets/6.png)
 
-------
+## Add a product
 
-Затем, убедившись, что все на месте переходит к оформлению, нажав `📦 Оформить заказ`.
+# To add a product, you need to choose a category and press the `➕ Add product` button, then fill out the "name-description-picture-price" form and confirm.
 
-![checkout](data/assets/6.png)
+# ![Add product](data/assets/1.png)
 
-## Добавить товар
+## Contacting the administration
 
-Чтобы добавить товар нужно выбрать категорию и нажать на кнопку `➕ Добавить товар`, после чего заполнить форму "название-описание-картинка-цена" и подтвердить.
+# To ask a question to the admin, it's enough to select the `/sos` command, there is a limit on the number of questions.
 
-![add_product](data/assets/1.png)
-
-## Связь с администрацией
-
-Чтобы задать вопрос админу, достаточно выбрать команду `/sos`, есть ограничение на количество вопросов.
-
-![sos](data/assets/7.png)
+# ![SOS](data/assets/7.png)
